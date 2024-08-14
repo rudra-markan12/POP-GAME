@@ -1,0 +1,45 @@
+
+funtion jaii()
+{
+    var sum = "  " 
+    for(var i=1; i<160; i++)
+    {
+         sum = sum + `<div id="bubble">5</div>`;
+    }
+document.querySelectors("#circle").innerhtml = sum
+}
+jaii();
+
+
+var timer = 60;
+funtion jajtimer(){
+    var ans = setInterval(funtion(){
+        if(timer>0)
+        {
+            timer--
+          document.querySelectors("#bbc").innerhtml = timer  
+        }
+        else
+        {
+            checkInterval(ans)
+        }
+
+    } ,1000 )
+}
+
+jajtimer();
+funtion tota()
+{
+   var ans = Math.floor(Math.random()*10)
+    document.querySelectors(".tato").innerhtml = ans
+}
+tota();
+funtion click()
+{
+    document("#circle").innerhtml
+    .addEventListner(funtion(tauji){
+        console.log(Number(tauji.target.textContent))
+    })
+}
+click();
+
